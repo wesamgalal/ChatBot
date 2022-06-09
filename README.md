@@ -26,7 +26,7 @@ words = list (jokes_vec.wv. vocab)
 word = 'france'
 lower_word = word. lower ()
 jokes_vec. most_similar(lower_word)
-# save model.bin
+#save model.bin
 jokes_vec. save('jokes_vec.bin')
 
 C.	Keras LSTM:
