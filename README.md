@@ -19,14 +19,18 @@ Machine learning algorithms need numeric data to work with so that they can anal
 using similarity measures such as cosine distance and inner products by embedding vectors models (word2vec, sen2vec, doc2vec, anything2vec which means embedding it to vectors) and position in the vector space words that share common contexts.
 
 #train model
+
 jokes_vec = Word2Vec (corpus, size=300, min_count=1)
 #summarize vocabulary
+
 words = list (jokes_vec.wv. vocab)
 #explore semantic similarities
+
 word = 'france'
 lower_word = word. lower ()
 jokes_vec. most_similar(lower_word)
 #save model.bin
+
 jokes_vec. save('jokes_vec.bin')
 
 C.	Keras LSTM:
