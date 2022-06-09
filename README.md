@@ -21,14 +21,17 @@ using similarity measures such as cosine distance and inner products by embeddin
 #train model
 
 jokes_vec = Word2Vec (corpus, size=300, min_count=1)
+
 #summarize vocabulary
 
 words = list (jokes_vec.wv. vocab)
+
 #explore semantic similarities
 
 word = 'france'
 lower_word = word. lower ()
 jokes_vec. most_similar(lower_word)
+
 #save model.bin
 
 jokes_vec. save('jokes_vec.bin')
